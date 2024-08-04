@@ -74,13 +74,26 @@ if value >= 5:
     print("Apple")
 elif value <= 10:
     print("Banana")
-# Enter a string word in the console.
-#  Enter the number n in the console.
-#  If word equal to “good” and the number between 7 and 15, it will be print “It’s good”.
-#  If word equal to “bad” and the number lower than 7 or greater than 15, it will be print “It’s bad”.
-# Q1: What will be the result for these outputs?
+
 value=10
 if value > 10:
     print("Red")
 if value <= 10:
     print("Blue")
+
+# Function to print length of text times of the character "X"
+def print_x_based_on_length(text):
+    length = len(text)
+    print("X" * length)
+text = input("Enter a string: ")
+print_x_based_on_length(text)
+
+# Function to evaluate the conditions and print the appropriate message
+
+while True:
+    word = input("Enter a word: ")
+    n = int(input("Enter a number: "))
+    if word == "good" and 7 <= n <= 15:
+        print("It’s good")
+    elif word == "bad" and (n < 7 or n > 15):
+        print("It’s bad")
